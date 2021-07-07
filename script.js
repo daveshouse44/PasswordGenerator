@@ -6,7 +6,9 @@ var upperCaseString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numberString = "1234567890";
 var specialString = "~!@#$%^&*()_-=+;:?";
 var charLength;
+var chosenChar = [];
 
+// Function to generate password
 function generatePassword() {
 
   // Prompts for character length imput
@@ -43,12 +45,28 @@ if (!lowerCase && !upperCase && !numberChar && !specialChar) {
   return
 }
 
+// Compiling characters from previous prompts
+if (lowerCase === true) {
+    chosenChar += chosenChar.concat(lowerCaseString)
+  }
 
+if (upperCase === true) {
+   chosenChar += chosenChar.concat(upperCaseString)
+ } 
 
+if (numberChar === true) {
+  chosenChar += chosenChar.concat(numberString)
+}
 
-var passwordGen = "Completed Password"
+if (specialChar === true) {
+  chosenChar += chosenChar.concat(specialString)
+}
 
-  return passwordGen
+// Getting random characters
+function randomChars(chosenChar) {
+  var i = Math.floor(Math.random() * charLength.lenth);
+  return chosenChar[i];
+}
 }//end generate password
 
 // Write password to the #password input
