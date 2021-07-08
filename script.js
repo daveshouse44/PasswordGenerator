@@ -7,6 +7,10 @@ var numberString = "1234567890";
 var specialString = "~!@#$%^&*()_-=+;:?";
 var charLength;
 var chosenChar = [];
+var randomMath;
+var randomChars;
+var randomItems;
+
 
 // Function to generate password
 function generatePassword() {
@@ -51,22 +55,29 @@ if (lowerCase === true) {
   }
 
 if (upperCase === true) {
-   chosenChar += chosenChar.concat(upperCaseString)
+    chosenChar += chosenChar.concat(upperCaseString)
  } 
 
 if (numberChar === true) {
-  chosenChar += chosenChar.concat(numberString)
+    chosenChar += chosenChar.concat(numberString)
 }
 
 if (specialChar === true) {
-  chosenChar += chosenChar.concat(specialString)
+    chosenChar += chosenChar.concat(specialString)
 }
 
 // Getting random characters
-function randomChars(chosenChar) {
-  var i = Math.floor(Math.random() * charLength.lenth);
-  return chosenChar[i];
+function randomItems(limit) {
+  var randomMath = Math.floor(Math.random() * limit);
+  return randomMath;
 }
+
+function randomChars(){
+  var i = randomMath(chosenChar.length);
+  return chosenChar.concat[i];
+}
+
+return generatePassword
 }//end generate password
 
 // Write password to the #password input
