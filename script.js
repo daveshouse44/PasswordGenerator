@@ -6,10 +6,7 @@ var upperCaseString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numberString = "1234567890";
 var specialString = "~!@#$%^&*()_-=+;:?";
 var charLength;
-var chosenChar = [];
-var randomMath;
-var randomChars;
-var randomItems;
+var chosenChar = "";
 
 
 // Function to generate password
@@ -51,33 +48,34 @@ if (!lowerCase && !upperCase && !numberChar && !specialChar) {
 
 // Compiling characters from previous prompts
 if (lowerCase === true) {
-    chosenChar += chosenChar.concat(lowerCaseString)
+    chosenChar = chosenChar.concat(lowerCaseString)
   }
 
 if (upperCase === true) {
-    chosenChar += chosenChar.concat(upperCaseString)
+    chosenChar = chosenChar.concat(upperCaseString)
  } 
 
 if (numberChar === true) {
-    chosenChar += chosenChar.concat(numberString)
+    chosenChar = chosenChar.concat(numberString)
 }
 
 if (specialChar === true) {
-    chosenChar += chosenChar.concat(specialString)
+    chosenChar = chosenChar.concat(specialString)
 }
 
-// Getting random characters
-function randomItems(limit) {
-  var randomMath = Math.floor(Math.random() * limit);
-  return randomMath;
-}
+// Final output of string
+var passwordOutput = [];
 
-function randomChars(){
-  var i = randomMath(chosenChar.length);
-  return chosenChar.concat[i];
+// Making random characters from string
+for (var i = 0; i < charLength; i++) {
+  var charString = chosenChar[Math.floor(Math.random() * chosenChar.length)];
+  passwordOutput.push(charString);
+  console.log(charString);
 }
+// Making random characters output to password variable
+var password = passwordOutput.join("");
+return password;
 
-return generatePassword
 }//end generate password
 
 // Write password to the #password input
