@@ -1,119 +1,94 @@
-# Unit 03: JavaScript
+# 03 JavaScript: Password Generator
 
-## Overview
+https://daveshouse44.github.io/PasswordGenerator/
 
-We've already explored how to structure webpages with HTML and style them with CSS. This week, with the help of JavaScript, we will learn how to make webpages dynamic.
+## Your Task
 
-**JavaScript** is a widely used scripting language that adds functionality and interactivity to a webpage. Building on a static HTML framework and CSS styling, with JavaScript you can store information in variables, manipulate your HTML, respond to an event, play audio and video, add decision-making to your code, and do much more. 
+This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-As the only programming language native to web browsers, JavaScript is used all over the web&mdash;making it a crucial skill in your toolbox. But Javascript development skills are also versatile. Once you have mastered JavaScript, it is much easier to pick up the fundamentals of other programming languages. 
+The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
-## Key Topics
+## User Story
 
-The following topics will be covered in this unit:
+```
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+```
 
- * [`<script>` tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+## Acceptance Criteria
 
- * [Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+```
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+```
 
- * [Primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
- 
- * [Logical and comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
- 
- * [Conditional statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
- 
- * [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
- 
- * [Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Instance_methods)
+## Mock-Up
 
- * [String methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Instance_methods)
- 
- * [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
- 
- * [Object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_methods)
- 
- * [Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
- 
- * [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
- 
- * [Scoping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variable_scope) 
- 
- * [`this` keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+The following image shows the web application's appearance and functionality:
 
-## Learning Objectives
+![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
 
-You will be employer-ready if you are able to: 
+## Grading Requirements
 
-* Implement complex decision-making in your code using `if` and `if-else` statements. 
+This homework is graded based on the following criteria: 
 
-* Explain the difference between equality (`==`) and strict equality (`===`). 
+### Technical Acceptance Criteria: 40%
 
-* Store related data in an array and use array methods to mutate and perform operations on the array. 
+* Satisfies all of the preceding acceptance criteria plus the following:
 
-* Explain functions and how they are used in JavaScript.
+  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
 
-* Explain the difference between function declarations and function expressions. 
+### Deployment: 32%
 
-* Recognize whether a variable is locally or globally scoped and explain the difference.
+* Application deployed at live URL.
 
-* Create objects and use object methods. 
+* Application loads with no errors.
 
-* Use the keyword `var` to declare a variable. 
+* Application GitHub URL submitted.
 
-## Technical Interview Preparation
+* GitHub repository that contains application code.
 
-You will be employer-competitive if you are able to solve the following algorithms and successfully complete the assessments.
+### Application Quality: 15%
 
-### Algorithms
+* Application user experience is intuitive and easy to navigate.
 
-Practicing algorithm-based interview questions is one of the best ways to prepare for interviews. Watch the 📹 Let's Code video(s) for tips and tricks on how to solve the algorithms.
+* Application user interface style is clean and polished.
 
-* [01: Arithmetic](03-Algorithms/01-arithmetic)
+* Application resembles the mock-up functionality provided in the homework instructions.
 
-* [02: Odd or Even](03-Algorithms/02-odd-or-even)
+### Repository Quality: 13%
 
-  * [📹 Let's Code Odd or Even!](https://2u-20.wistia.com/medias/bnqjr1owj7)
+* Repository has a unique name.
 
-* [03: Log Nums](03-Algorithms/03-log-nums)
+* Repository follows best practices for file structure and naming conventions.
 
-### Assessments
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-Assess your knowledge by answering technical interview questions and solving coding challenges.
+* Repository contains multiple descriptive commit messages.
 
-* [Unit 03 Assessment](https://forms.gle/WQNAEujgFBVm6kc79)
+* Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-## Homework 
+## Review
 
-You'll create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+You are required to submit the following for review:
 
-## Career Connection
+* The URL of the deployed application.
 
-Career Services material for this unit is located in the [Career Connection folder](04-Career-Connection/README.md). For more information about Career Services, including coding milestones, demo days, technical toolkits, workshops, and additional resources, visit the [Career Services website](https://mycareerspot.org/).
+* The URL of the GitHub repository, with a unique name and a readme describing the project.
 
-## Heads-Up
-
-In the next unit, you will learn to harness the power of Web APIs to add complex functionality to your JavaScript with just a few lines of code. 
-
-## Resources
-
-Here are some additional resources to help solidify the topics covered in this unit.
-
-### Git Guide
-
-Refer to the Git Guide to review the git concept for this unit. Watch the `📹 Git Guide` video for an additional walkthrough of the git concept.
-
-  * 📖 [Git Guide: Git Branch](./01-Activities/27-Evr_Git-Branch)
-
-  * 📹 [Git Guide Video: Git Branch](https://2u-20.wistia.com/medias/73tr86ngck)
-
-### General
-
-Refer to these resources for additional information about topics covered in this unit.
-
-* [📖 Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open)
-
-* [📖 MDN Web Docs on JavaScript data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-
----
-
+- - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
